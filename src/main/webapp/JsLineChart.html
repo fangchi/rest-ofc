@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<script type="text/javascript" src="/js/swfobject.js"></script>
+		<script type="text/javascript">
+			swfobject.embedSWF("flash/open-flash-chart.swf", "my_chart", "1024", "300", "9.0.0", 
+			"flash/expressInstall.swf",
+			{"data-file":"resource/LineChartResource"});
+			var tmp;
+			
+			function reload() {
+			  tmp = findSWF("my_chart");
+			  x = tmp.reload("resource/LineChartResourceReload");
+			}
+
+
+			function findSWF(movieName) {
+			  if (navigator.appName.indexOf("Microsoft")!= -1) {
+			    return window["ie_" + movieName];
+			  } else {
+			    return document[movieName];
+			  }
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="reload" onclick="reload()"/>
+		<!-- <input type="button" value="msg" id="msg" onclick="msg()"/>
+		<input type="button" value="msg_hide" id="msg_hide" onclick="msg_hide()"/> -->
+		<div id="my_chart">asas</div>
+	</body>
+</html>

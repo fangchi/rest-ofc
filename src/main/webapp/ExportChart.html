@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type="text/javascript" src="/js/swfobject.js"></script>
+<script type="text/javascript" src="/js/ofc.js"></script>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript">
+			swfobject.embedSWF("flash/open-flash-chart.swf", "my_chart", "1024", "300", "9.0.0", 
+			"flash/expressInstall.swf",
+			{"data-file":"resource/HBarChartResource"});
+			
+			function handleStateChange(result){
+				console.info(result);
+			}
+			
+			function exportimg(){
+				//ofc.rasterize("my_chart","my_chart_imag");
+				ofc.saveimage("my_chart","saveimg/SaveImgResource","imgdata",{"a":1},handleStateChange);
+			}
+		</script>
+</head>
+<body>
+	<input type="button" value="exportimg" onclick="exportimg()">
+	<div id="my_chart">asas</div>
+	<div id="my_chart_imag">asas</div>
+</body>
+</html>
