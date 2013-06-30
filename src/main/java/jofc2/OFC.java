@@ -36,6 +36,7 @@ import jofc2.model.plugins.AreaChart;
 import jofc2.model.plugins.KeyElement;
 import jofc2.model.plugins.OnShow;
 import jofc2.model.plugins.RadarAxis;
+import jofc2.model.plugins.Tags;
 import jofc2.model.plugins.ValueElement;
 
 import org.json.JSONException;
@@ -79,7 +80,7 @@ public class OFC {
 			FilledBarChart.Bar.class, SketchBarChart.Bar.class,
 			LineChart.Dot.class, NullElement.class, Chart.class,
 			ShapeChart.class, ShapeChart.Point.class, Tooltip.class,
-			Tooltip.Type.class, /*plugins*/ AreaChart.class,ValueElement.class ,KeyElement.class,OnShow.class,RadarAxis.class};
+			Tooltip.Type.class, /*plugins*/ AreaChart.class,ValueElement.class ,KeyElement.class,OnShow.class,RadarAxis.class,Tags.class};
 	private final XStream converter = new XStream(new OFCJSONDriver());
 
 	/**
