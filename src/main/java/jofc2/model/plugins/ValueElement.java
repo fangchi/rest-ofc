@@ -9,7 +9,6 @@ public class ValueElement {
 
 	private Number value;
 	
-	
 	private Number right;
 	
 	private Number left;
@@ -34,6 +33,10 @@ public class ValueElement {
 	private String label;
 	
 	private Number top;
+	
+	private Number x;
+	
+	private Number y;
 
 	public ValueElement() {
 
@@ -150,6 +153,22 @@ public class ValueElement {
 		this.top = top;
 		return this;
 	}
-	
-	
+
+	public Number getX() {
+		return x;
+	}
+
+	public ValueElement setX(Number x) {
+		this.x = x;
+		return this;
+	}
+
+	public Number getY() {
+		return y;
+	}
+
+	public ValueElement setY(Number y) {
+		this.y = y;
+		return this;
+	}
 }
