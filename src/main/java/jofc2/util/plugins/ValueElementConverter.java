@@ -38,6 +38,7 @@ public class ValueElementConverter extends ConverterBase<ValueElement> {
 		writeNode(writer, "label", o.getLabel(), true);
 		writeNode(writer, "x", o.getX(), true);
 		writeNode(writer, "y", o.getY(), true);
+		writeNode(writer, "labelColour", o.getLabelColour(), true);
 	}
 
 	@SuppressWarnings("rawtypes")

@@ -37,6 +37,9 @@ public class ValueElement {
 	private Number x;
 	
 	private Number y;
+	
+	@Alias("label-colour")
+	private String labelColour;
 
 	public ValueElement() {
 
@@ -169,6 +172,15 @@ public class ValueElement {
 
 	public ValueElement setY(Number y) {
 		this.y = y;
+		return this;
+	}
+
+	public String getLabelColour() {
+		return labelColour;
+	}
+
+	public ValueElement setLabelColour(String labelColour) {
+		this.labelColour = labelColour;
 		return this;
 	}
 }

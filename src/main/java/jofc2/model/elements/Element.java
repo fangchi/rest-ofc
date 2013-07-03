@@ -107,8 +107,9 @@ public abstract class Element implements Serializable {
 		return gradientFill;
 	}
 
-	public void setGradientFill(Boolean gradientFill) {
+	public Element setGradientFill(Boolean gradientFill) {
 		this.gradientFill = gradientFill;
+		return this;
 	}
 	
 	public String getOn_click() {
